@@ -64,7 +64,7 @@ class RandomWordsState extends State<RandomWords> {
     );
   }
 
-  ///用来显示 单词对的listView
+  ///用来显示 单词对的listView,使用ListView.builder能够处理大量数据，是长列表
   Widget _buildSuggestions() {
     return new ListView.builder(
         padding: const EdgeInsets.all(16.0),
